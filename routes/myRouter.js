@@ -5,11 +5,9 @@ const peliculaController = require('../controllers/myController');
 
 router.post('/crearpeliculas', peliculaController.crearPeliculas);
 
-
 //ruta para leer todas las peliculas de terror
 router.get('/peliculas/terror', peliculaController.obtenerPeliculasDeTerror);
 
-// Nueva ruta para borrar todas las películas de terror
-//router.delete('/peliculas/terror', peliculaController.borrarPeliculasDeTerror);
+router.delete('/terror', peliculaController.eliminarPeliculasDeTerror);
 
 module.exports = router;
